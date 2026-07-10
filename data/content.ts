@@ -192,4 +192,14 @@ export const projects: Project[] = [
     tags: ["Python", "PyTorch", "Signal Processing", "Computer Vision", "MediaPipe"],
     link: "https://github.com/OnMason/rppg-pipeline",
   },
+  {
+    title: "Hand-Soldered FM/AM Radio",
+    image: "/projects/radio.png",
+    imageAlt:
+      "Finished FM/AM radio in a clear acrylic case with a lit seven-segment frequency display and four-button interface",
+    description:
+      "Hand-soldered a fully functional FM/AM radio from 20+ discrete components and ICs around an RDA5807 tuner, covering the full FM (87.5–108 MHz) and AM (530–1700 kHz) broadcast bands with a 4-button volume and tuning interface. Built end-to-end from multi-page schematics — component selection through board bring-up — debugging reception failures down to cold joints and grounding faults with a multimeter.",
+    tags: ["Analog Circuits", "RF", "Soldering", "RDA5807", "Schematic Reading"],
+    link: "https://github.com/OnMason/fm-am-radio",
+  },
 ];
