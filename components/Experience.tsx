@@ -18,14 +18,16 @@ export default function Experience() {
                 </span>
               </h3>
               <p className="shrink-0 text-sm text-zinc-500">
-                {job.location} | {job.dates}
+                {job.location ? `${job.location} | ${job.dates}` : job.dates}
               </p>
             </div>
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-zinc-400">
-              {job.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
-              ))}
-            </ul>
+            {job.bullets.length > 0 && (
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-zinc-400">
+                {job.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            )}
           </article>
         ))}
       </div>

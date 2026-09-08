@@ -19,12 +19,12 @@ export const navLinks = [
 export const hero = {
   headline: "Hardware Engineer | RTL, Embedded Systems & Circuit Design",
   subheadline:
-    "UC Irvine EE student (Semiconductors & Optoelectronics) building FPGA cores, embedded firmware, and PCBs. Currently interning in hardware validation at Revvo AI.",
+    "UC Irvine EE student (Semiconductors & Optoelectronics) building FPGA cores, embedded firmware, and PCBs. Incoming SIE Failure Analysis Intern at Tesla.",
 };
 
 export const about = {
   paragraph:
-    "Hi! I'm Pranav, a second-year Electrical Engineering student at UC Irvine specializing in Semiconductors & Optoelectronics. I work as a Hardware Validation Intern at Revvo AI and as a Hardware/Software R&D Engineer at UCI's HERO Lab, where I split my time between analog circuit design and embedded firmware. Outside of that, I like building things from scratch to understand them better, from RISC-V processors in Verilog to custom PCBs and embedded sensor projects.",
+    "Hi! I'm Pranav, a third-year Electrical Engineering student at UC Irvine specializing in Semiconductors & Optoelectronics. I'm an incoming SIE Failure Analysis Intern at Tesla for fall 2026, and I work as a Hardware/Software R&D Engineer at UCI's HERO Lab, where I split my time between analog circuit design and embedded firmware. Before that, I spent the summer validating wireless sensor hardware at Revvo AI. Outside of that, I like building things from scratch to understand them better, from RISC-V processors in Verilog to custom PCBs and embedded sensor projects.",
   // Drop your photo at /public/about.jpg and it will appear automatically.
   photo: "/about.jpg",
 };
@@ -86,17 +86,24 @@ export const skillGroups: { title: string; skills: Skill[] }[] = [
 export type Experience = {
   role: string;
   company: string;
-  location: string;
+  // Optional — omitted while a role's work location isn't confirmed yet.
+  location?: string;
   dates: string;
   bullets: string[];
 };
 
 export const experience: Experience[] = [
   {
+    role: "SIE Failure Analysis Intern",
+    company: "Tesla",
+    dates: "September 2026 – December 2026",
+    bullets: [],
+  },
+  {
     role: "Hardware Validation Intern",
     company: "Revvo AI",
     location: "San Mateo, CA",
-    dates: "June 2026 – Present",
+    dates: "June 2026 – September 2026",
     bullets: [
       "Reviewed schematics and PCB designs for a battery-powered wireless sensor node, catching pre-fabrication issues before they became field failures",
       "Built an automated test framework in Python interfacing with an oscilloscope, JLink, and programmable power supply, cutting manual bench-characterization time significantly",
