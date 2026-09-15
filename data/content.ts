@@ -19,12 +19,12 @@ export const navLinks = [
 export const hero = {
   headline: "Hardware Engineer | RTL, Embedded Systems & Circuit Design",
   subheadline:
-    "UC Irvine EE student (Semiconductors & Optoelectronics) building FPGA cores, embedded firmware, and PCBs. Incoming SIE Failure Analysis Intern at Tesla.",
+    "UC Irvine EE student (Semiconductors & Optoelectronics) building FPGA cores, embedded firmware, and PCBs. Currently a Hardware Engineering Intern at Tesla, working on PCB design and failure analysis.",
 };
 
 export const about = {
   paragraph:
-    "Hi! I'm Pranav, a third-year Electrical Engineering student at UC Irvine specializing in Semiconductors & Optoelectronics. I'm an incoming SIE Failure Analysis Intern at Tesla for fall 2026, and I work as a Hardware/Software R&D Engineer at UCI's HERO Lab, where I split my time between analog circuit design and embedded firmware. Before that, I spent the summer validating wireless sensor hardware at Revvo AI. Outside of that, I like building things from scratch to understand them better, from RISC-V processors in Verilog to custom PCBs and embedded sensor projects.",
+    "Hi! I'm Pranav, a third-year Electrical Engineering student at UC Irvine specializing in Semiconductors & Optoelectronics. I'm currently a Hardware Engineering Intern at Tesla working on PCB design and failure analysis, and a Hardware/Software R&D Engineer at UCI's HERO Lab, where I split my time between analog circuit design and embedded firmware. Before that, I spent the summer validating wireless sensor hardware at Revvo AI. Outside of that, I like building things from scratch to understand them better, from RISC-V processors in Verilog to custom PCBs and embedded sensor projects.",
   // Drop your photo at /public/about.jpg and it will appear automatically.
   photo: "/about.jpg",
 };
@@ -94,10 +94,15 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "SIE Failure Analysis Intern",
+    role: "Hardware Engineering Intern – PCB Design & Failure Analysis",
     company: "Tesla",
+    location: "Palo Alto, CA",
     dates: "September 2026 – December 2026",
-    bullets: [],
+    bullets: [
+      "Engineered custom PCBAs and modular bed-of-nails test fixtures from schematic capture through assembly and bring-up, routing 120+ probe points to reach 94% nodal access for structural test coverage and manufacturing validation",
+      "Developed automated test software for Keysight i3070 ICT and x1149 boundary-scan platforms, using Python to sequence execution, parse parametric measurements, and log test records on high-volume automotive telemetry boards",
+      "Executed root-cause failure analysis using oscilloscope profiling, X-ray, and microscopy, tracing intermittent power rail shorts to flexure-induced MLCC cracking during fixture actuation, prompting a fixture redesign that eliminated board flex failures",
+    ],
   },
   {
     role: "Hardware Validation Intern",
