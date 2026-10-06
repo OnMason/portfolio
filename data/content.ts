@@ -94,7 +94,7 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    role: "Hardware Engineering Intern – PCB Design & Failure Analysis",
+    role: "Hardware Engineering Intern",
     company: "Tesla",
     location: "Palo Alto, CA",
     dates: "September 2026 – December 2026",
@@ -154,12 +154,28 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "5-Stage Pipelined RV32I Processor",
+    image: null,
+    description:
+      "Designed a 5-stage pipelined RISC-V (RV32I) processor in SystemVerilog supporting all 37 user-level instructions, with EX/MEM and MEM/WB forwarding, load-use stall logic, and EX-stage branch resolution with a 2-cycle flush, averaging 1.32 CPI in simulation. Verified with a self-checking constrained-random testbench and scoreboard against an untimed ISA reference model (500 programs, ~218,000 instructions, 0 mismatches), the full 40-test riscv-tests rv32ui suite, 35 SVA assertions, and all 117 functional coverage bins, catching 25 of 25 injected RTL bugs in mutation testing.",
+    tags: ["SystemVerilog", "RISC-V", "SVA", "Vivado", "Design Verification"],
+    link: "https://github.com/OnMason/RV32I-Pipelined-Processor",
+  },
+  {
+    title: "Systolic Array Matrix-Multiply Accelerator",
+    image: null,
+    description:
+      "Designed a parameterized N×N output-stationary systolic array for INT8 matrix multiplication in SystemVerilog, with N² multiply-accumulate cells, 32-bit accumulators, and a requantization stage (round, shift, saturate, ReLU) completing in 3N−2 steps. Built dual-clock asynchronous FIFOs with Gray-coded pointers and two-flop synchronizers for safe clock-domain crossing. Verified with constrained-random testbenches and 30 SVA assertions across 900 FIFO tests and 4,198 matrix multiplies (four array sizes, five seeds) with 0 mismatches, catching 22 of 24 injected bugs in mutation testing.",
+    tags: ["SystemVerilog", "SVA", "CDC", "RTL Design", "INT8 Accelerator"],
+    link: "https://github.com/OnMason/Systolic-MAC-Accelerator",
+  },
+  {
     title: "Single-Cycle RV32I Processor",
     image: "/projects/rv32i.png",
     imageAlt:
       "Vivado simulation waveform showing clock, reset, and register values across processor cycles",
     description:
-      "Designed and verified a 9-module single-cycle RISC-V (RV32I) processor in Verilog, supporting R-type, I-type, load, and store instructions. Built a custom 32-bit ALU, synchronous register file, and full datapath, verified through a self-written Vivado testbench with cycle-accurate waveform analysis. Currently being extended into a pipelined, hazard-resolved core with SystemVerilog verification.",
+      "Designed and verified a 9-module single-cycle RISC-V (RV32I) processor in Verilog, supporting R-type, I-type, load, and store instructions. Built a custom 32-bit ALU, synchronous register file, and full datapath, verified through a self-written Vivado testbench with cycle-accurate waveform analysis. Later extended into the 5-stage pipelined core above.",
     tags: ["Verilog", "RISC-V", "RTL Design", "Vivado", "Computer Architecture"],
     link: "https://github.com/OnMason/RV32I-Single-Cycle-Processor",
   },
