@@ -99,9 +99,9 @@ export const experience: Experience[] = [
     location: "Palo Alto, CA",
     dates: "September 2026 – December 2026",
     bullets: [
-      "Engineered custom PCBAs and modular bed-of-nails test fixtures from schematic capture through assembly and bring-up, routing 120+ probe points to reach 94% nodal access for structural test coverage and manufacturing validation",
-      "Developed automated test software for Keysight i3070 ICT and x1149 boundary-scan platforms, using Python to sequence execution, parse parametric measurements, and log test records on high-volume automotive telemetry boards",
-      "Executed root-cause failure analysis using oscilloscope profiling, X-ray, and microscopy, tracing intermittent power rail shorts to flexure-induced MLCC cracking during fixture actuation, prompting a fixture redesign that eliminated board flex failures",
+      "Automating board-level DFT and test development for Keysight i3070 ICT and x1149 JTAG boundary-scan platforms, scripting in Python and Korn shell and using BSDL device models to build scan chains, sequence execution, and parse parametric measurements",
+      "Engineered custom PCBAs and modular bed-of-nails test fixtures alongside design EEs from schematic capture through assembly and bring-up, applying board-level DFT to route 120+ probe points and reach 94% nodal access for structural ICT/JTAG coverage",
+      "Executed root-cause failure analysis using oscilloscope profiling, X-ray, and microscopy, tracing intermittent power rail shorts to flexure-induced MLCC cracking during fixture actuation, driving a fixture redesign that eliminated board flex and recurring shorts",
     ],
   },
   {
