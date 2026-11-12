@@ -9,7 +9,14 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/pranavrao09",
 };
 
+export const resume = {
+  // Replace the PDF at /public/Pranav-Rao-Resume.pdf to update the resume.
+  file: "/Pranav-Rao-Resume.pdf",
+  blurb: "One page: education, experience, projects, and skills.",
+};
+
 export const navLinks = [
+  { label: "Resume", href: "#resume" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },

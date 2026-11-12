@@ -11,7 +11,7 @@ export default function Nav() {
           <span className="sm:hidden">{site.shortName}</span>
           <span className="hidden sm:inline">{site.name}</span>
         </a>
-        <div className="flex items-center gap-4 text-xs sm:gap-6 sm:text-sm">
+        <div className="flex items-center gap-3 text-xs sm:gap-6 sm:text-sm">
           {navLinks.map((link) => (
             <a
               key={link.href}
